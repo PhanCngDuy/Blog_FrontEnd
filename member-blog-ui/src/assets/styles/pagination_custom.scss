@@ -1,0 +1,56 @@
+.rc-pagination {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+.rc-pagination-item,
+.rc-pagination-prev,
+.rc-pagination-next,
+.rc-pagination-jump-prev,
+.rc-pagination-jump-next {
+    min-width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    border-radius: 6px;
+}
+.rc-pagination-prev .rc-pagination-item-link,
+.rc-pagination-next .rc-pagination-item-link {
+    border-radius: 6px;
+}
+.rc-pagination-item-active:focus,
+.rc-pagination-item-active:hover,
+.rc-pagination-item-active {
+    border-color: #f97316;
+    color: #fff;
+    background-color: #f97316;
+}
+.rc-pagination-item:focus,
+.rc-pagination-item:hover,
+.rc-pagination-item:focus a,
+.rc-pagination-item:hover a {
+    color: #f97316;
+    border-color: #f97316;
+}
+
+.rc-pagination-item-active a,
+.rc-pagination-item-active:focus a,
+.rc-pagination-item-active:hover a {
+    color: #fff;
+}
+.rc-pagination-next button:after,
+.rc-pagination-prev button:after {
+    font-size: 25px;
+}
+.rc-pagination-prev:focus .rc-pagination-item-link,
+.rc-pagination-next:focus .rc-pagination-item-link,
+.rc-pagination-prev:hover .rc-pagination-item-link,
+.rc-pagination-next:hover .rc-pagination-item-link {
+    color: #f97316;
+    border-color: #f97316;
+    border-radius: 6px;
+}
